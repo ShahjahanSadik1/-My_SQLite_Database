@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.shahjahan.my_sqlite_database'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.shahjahan.my_sqlite_database"
         minSdk 24
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
