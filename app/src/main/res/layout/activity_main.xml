@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/button_style"
     tools:context=".MainActivity">
 
 
@@ -28,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:hint="Name" />
+            android:hint="ডাক্তারের নাম" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -38,12 +39,43 @@
                 android:id="@+id/t_i_ed_text_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:hint="Namber" />
+                android:inputType="text"
+                android:hint="ডিগ্রি" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/t_i_ed_text_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="ক্যাটাগরি " />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/t_i_ed_text_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="চেম্বার " />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
 
 
     <Button
@@ -51,7 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
-        android:backgroundTint="#FFEA00"
+        android:backgroundTint="#E0D0CB"
         android:textColor="@color/black"
         android:text="Insart Data" />
 
@@ -61,7 +93,10 @@
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
         android:text="Show Data"
-        android:backgroundTint="#FF9100"/>
+        android:backgroundTint="#039BE5"/>
+
+
+
 
 
     </LinearLayout>
