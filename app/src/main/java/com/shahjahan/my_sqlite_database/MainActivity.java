@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     TextInputEditText t_i_ed_text_1,t_i_ed_text_2,t_i_ed_text_3,t_i_ed_text_4;
-    Button insart_Data_button_1,show_Data_Button_2;
+    Button insart_Data_button_1,show_Data_Button_2,search_data_Button_3;
 
 
 
@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         insart_Data_button_1 =findViewById(R.id.insart_Data_button_1);
         show_Data_Button_2 =findViewById(R.id.show_Data_Button_2);
+        search_data_Button_3 =findViewById(R.id.search_data_Button_3);
 
 
         db_helher_two = new Database_Helper_two(MainActivity.this);
@@ -198,7 +199,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+        search_data_Button_3.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, Main_search_data_Activity.class));
+        });
 
 
 

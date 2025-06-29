@@ -24,7 +24,12 @@ public class Database_Helper_two extends SQLiteOpenHelper {
         //Table making formula  >>>>>>>>>>>>>>>>>>>>>>>>>>>>
         //Fast table
 
-        db.execSQL("CREATE TABLE my_table (id INTEGER PRIMARY KEY AUTOINCREMENT,Dr_name TEXT,Dr_degree TEXT,Dr_category TEXT,Dr_chamber TEXT)");
+        db.execSQL("CREATE TABLE my_table (" +
+                "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "Dr_name TEXT," +
+                "Dr_degree TEXT," +
+                "Dr_category TEXT," +
+                "Dr_chamber TEXT)");
 
         // if akadik table hoi
         //2nd table
@@ -63,6 +68,20 @@ public class Database_Helper_two extends SQLiteOpenHelper {
      }
 
 
+
+    public Cursor SearchDataBy_id(int id){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * from my_table where id like '"+id+"' ",null)    ;
+        return cursor;
+    }
+
+    public Cursor SearchDataBy_name(String Dr_name){
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("Select * from my_table where Dr_name like '%"+Dr_name+"%'",null)    ;
+        return cursor;
+    }
 
 
 

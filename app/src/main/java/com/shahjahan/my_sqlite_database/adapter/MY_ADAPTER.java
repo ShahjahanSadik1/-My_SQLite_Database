@@ -19,8 +19,10 @@ import java.util.List;
 public class MY_ADAPTER extends RecyclerView.Adapter<MY_ADAPTER.MY_VIEW_HOLDER> {
 
 
+
     Context context;
     List<Recycler_model> recyclerModel_ListS;
+
 
 
     public MY_ADAPTER(Context context, List<Recycler_model> recyclerModel_ListS) {
